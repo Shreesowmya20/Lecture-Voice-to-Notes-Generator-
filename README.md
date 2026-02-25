@@ -1,4 +1,3 @@
----
 
 # 🎓 Lecture Voice-to-Notes Generator
 
