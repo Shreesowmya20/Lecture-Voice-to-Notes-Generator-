@@ -162,7 +162,7 @@ pip install -r requirements.txt
 ### 4️⃣ Configure Gemini API Key
 
 1. Obtain your API key from **Google AI Studio**
-2. Create a `.env` file and a '.gitignore' file in the root directory
+2. Create a `.env` file  in the root directory
 3. Add your key inside `.env`:
 
 ```env
