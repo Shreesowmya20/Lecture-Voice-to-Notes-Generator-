@@ -36,6 +36,8 @@ with st.sidebar:
     )
     st.markdown("---")
     st.info("Supported Formats:\n- MP3\n- MP4\n- WAV\n- M4A\n- MOV")
+    
+    
 
 
 
@@ -204,7 +206,7 @@ st.markdown("---")
 # ---------------- SYSTEM STATUS ----------------
 with st.sidebar:
     st.markdown("---")
-    #st.caption("AI/ML Internship Project Demo")
+    st.caption("Gemini API Key loaded")
 
 
 # ---------------- UPLOAD SECTION ----------------
@@ -350,3 +352,4 @@ if st.session_state.processing_complete:
         st.session_state.transcript,
         height=500
         )
+
