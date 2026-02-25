@@ -1,3 +1,4 @@
+---
 
 # 🎓 Lecture Voice-to-Notes Generator
 
@@ -6,6 +7,13 @@
 <p align="center">
   <b>Developed as part of the IBM SkillsBuild – AICTE Edunet AIML Internship</b>
 </p>
+
+---
+
+## 🌐 Live Deployment
+
+🔗 **Try the Application Here:**
+👉 [https://jajsjwztac5x2hxmcxffxy.streamlit.app/](https://jajsjwztac5x2hxmcxffxy.streamlit.app/)
 
 ---
 
@@ -25,15 +33,16 @@ The **Lecture Voice-to-Notes Generator** leverages **Google Gemini 2.5 Flash AI 
 
 ## 🚀 Key Features
 
-✔ Supports **MP3, MP4, WAV, M4A, MOV** formats
-✔ Automatic audio extraction from video files (FFmpeg)
-✔ Intelligent 15-minute audio chunking
-✔ AI-powered transcription (Gemini API)
-✔ NLP-based summarization
-✔ Structured quiz generation (MCQs + Flashcards)
-✔ Downloadable PDF study guide
-✔ Light/Dark theme toggle
-✔ Secure API key handling using `.env`
+✔ Supports MP3, MP4, WAV, M4A, and MOV file formats
+✔ Automatically extracts audio from video files using FFmpeg
+✔ Splits long lectures into intelligent 15-minute audio chunks
+✔ Performs AI-powered speech-to-text transcription using Gemini API
+✔ Generates structured and concise study notes using NLP
+✔ Creates multiple-choice questions (MCQs) automatically
+✔ Generates interactive flashcards for revision
+✔ Exports a professionally formatted downloadable PDF study guide
+✔ Includes Light/Dark theme toggle for better user experience
+✔ Secures API keys using environment variables (.env)
 
 ---
 
@@ -95,6 +104,7 @@ Download Study Guide
 ├── .env
 ├── .gitignore
 ├── requirements.txt
+├── runtime.txt
 └── README.md
 ```
 
@@ -108,7 +118,6 @@ Follow these steps to clone and run the application locally.
 
 * Python 3.11+ installed
 * FFmpeg installed and added to system PATH
-  (Required for Pydub to process audio/video files)
 
 ---
 
@@ -152,14 +161,14 @@ pip install -r requirements.txt
 ### 4️⃣ Configure Gemini API Key
 
 1. Obtain your API key from **Google AI Studio**
-2. Create a `.env` file in the root directory
+2. Create a `.env` file and a '.gitignore' file in the root directory
 3. Add your key inside `.env`:
 
 ```env
 GEMINI_API_KEY="AIzaSy.............."
 ```
 
-⚠️ Make sure `.env` is added to `.gitignore` to keep your API key secure.
+⚠️ Ensure `.env` is included in `.gitignore` to protect your API key.
 
 ---
 
@@ -169,7 +178,6 @@ GEMINI_API_KEY="AIzaSy.............."
 streamlit run app.py
 ```
 
-🌐 The application will automatically open in your web browser and is ready to process lecture files.
+🌐 The application will automatically open in your browser and is ready to process lecture files.
 
-
-
+---
