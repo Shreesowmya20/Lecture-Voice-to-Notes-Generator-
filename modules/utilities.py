@@ -209,4 +209,5 @@ def create_pdf(transcript, summary, quiz_obj: LectureQuiz):
     # Output PDF as a byte stream for Streamlit download button
     #return bytes(pdf.output(dest='B'))
 
-    return pdf.output(dest='S').encode('latin-1')
+    pdf_output = pdf.output(dest='S')
+    return bytes(pdf_output)
